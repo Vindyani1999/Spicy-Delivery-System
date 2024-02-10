@@ -1,0 +1,14 @@
+.container{
+    
+    position: relative;
+}
+
+.search{
+    position: absolute;
+  top: 50%; /* Adjust this value to vertically position the search bar as desired */
+  left: 50%; /* Adjust this value to horizontally position the search bar as desired */
+  transform: translate(-50%, -50%);
+  z-index: 1; 
+  margin-top: 5rem;
+    
+}

@@ -1,0 +1,110 @@
+
+.container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4rem;
+  }
+  
+  .text {
+    flex: 1; 
+    margin-left: 6rem;
+    padding: 0;
+  }
+  
+
+  .text2 {
+    flex: 1; 
+    margin-right: 2rem;
+    margin-left: 3rem;
+    padding: 0;
+   
+    
+  }
+
+  
+  
+  .img {
+    flex: 1; 
+    margin-left: 20px; 
+    max-width: 100%; 
+    width: 35rem;
+    height: 35rem;
+    margin-right: 6rem;
+    filter: brightness(1.1);
+  }
+  
+  .img2 {
+    flex: 1; 
+    margin-left: 20px; 
+    max-width: 100%; 
+    width: 35rem;
+    height: 35rem;
+    margin-left: 6rem;
+    filter: brightness(1.1);
+  }
+
+  .text h1 {
+    margin: 0 0 0 1rem;
+    font-size: 4rem;
+  }
+.text2 h1 {
+        
+        font-size: 4rem;
+        align-items: center;
+  }
+  .fast{
+    color: #000000;
+  }
+  
+  .spices{
+    
+    color: #FF0000;
+  }
+  .para{
+    margin-top: 2rem;
+    margin-left: 1rem;
+    font-size: 1rem;
+    margin-bottom: 4rem;
+  }
+
+  .para2{
+    margin-top: 2rem;
+    margin-left: 0.6rem;
+    font-size: 1rem;
+    margin-bottom: 4rem;
+  }
+
+  .expore{
+    background: #e72929;
+    padding: 1rem;
+    border-radius: 1rem;
+    text-decoration: none;
+    color: white;
+    margin-left: 12rem;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  .expore2{
+    background: #e72929;
+    padding: 1rem;
+    border-radius: 1rem;
+    text-decoration: none;
+    color: white;
+    margin-left: 11rem;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
+  .expore:hover{
+    background: black;
+    color: white;
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  .expore2:hover{
+    background: black;
+    color: white;
+    opacity: 0.8;
+    cursor: pointer;
+  }
+

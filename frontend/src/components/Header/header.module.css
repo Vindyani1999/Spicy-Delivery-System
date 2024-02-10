@@ -1,0 +1,103 @@
+.header{
+    background: white;
+    padding: 0;
+    border-bottom: 1px solid #e72929;
+}
+
+.header a {
+    color: #af1313;
+    
+}
+
+.header a:hover{
+    background: #e72929;
+    color: white;
+    cursor: pointer;
+}
+
+.container{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.header ul{
+    display: flex;
+    list-style-type: none;
+    margin: 0;   
+}
+
+.header ul a{
+    padding: 1rem;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.menu_container{
+    position: relative;
+}
+.menu{
+    position: absolute;
+    z-index: 1001;
+    background-color: whitesmoke;
+    display: none;
+
+}
+
+.menu_container:hover .menu{
+    display: block;
+}
+
+.menu a{
+    width :100%;
+    min-width: 8rem;
+}
+
+.cart_count{
+    background-color: #ff4d4d;
+    color: white;
+    padding: 0.1rem 0.45rem ;
+    border-radius: 100rem;
+    font-size: 0.9rem;
+}
+.logo_image{
+    width: 7rem;
+    height: 3rem;
+    padding: 0;
+    margin: 2rem 1rem 0 1rem;
+    display: flex;
+    margin-top: 0;
+    filter: brightness(-3);
+    
+}
+
+.logo_image:hover{
+    filter: brightness(100);
+}
+
+.logo{
+    padding: 0.2rem 0 0 0 ;
+}
+
+.lnk a:hover{
+    background: #e72929;
+    color: white;
+    cursor: pointer;    
+    
+}
+
+.lnk a{
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+}
+.headerButtons{
+    width: 50rem;
+    display: flex;
+    flex-direction: row;
+    margin: 0 3rem 0 3rem;
+}
+
+
+

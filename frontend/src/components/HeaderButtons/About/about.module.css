@@ -1,0 +1,42 @@
+.container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4rem;
+  }
+
+  .largecontainer{
+    margin-top: 1rem;
+  }
+  .img{
+    display: flex;
+    z-index: 10;
+    width: 12rem;
+    height: 20rem;
+    padding: 0;
+    margin-left: 7rem;
+    
+    position: absolute;
+    margin-top: -5.4rem;
+  }
+
+  .img1{
+    display: flex;
+    z-index: 10;
+    width: 17.5rem;
+    height: 23rem;
+    padding: 0;
+    position: absolute;
+    margin-left:63.4rem;
+  }
+  .video{
+    display: flex;
+    z-index: 1;
+    padding: 0;
+    margin-left: 8rem;
+    
+
+  }
+
+  .content{
+    margin: 1.5rem 3rem 1rem 3rem;
+  }
