@@ -11,7 +11,7 @@ services:
 
   backend:
     image: chami99/spicy-backend
-    container_name: backend
+    container_name: spicy-container-frontend
     ports:
       - "5001:5000"
     environment:
@@ -19,7 +19,7 @@ services:
 
   frontend:
     image: chami99/spicy-frontend
-    container_name: frontend
+    container_name: spicy-container-frontend
     ports:
       - "3001:3000"
 
