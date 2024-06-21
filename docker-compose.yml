@@ -1,0 +1,27 @@
+version: "3.8"
+
+services:
+  mongo:
+    image: mongo
+    container_name: mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+
+  backend:
+    image: chami99/spicy-backend
+    container_name: backend
+    ports:
+      - "5001:5000"
+    environment:
+      - MONGO_URI=mongodb+srv://Weather99:chami1999928@weatherdb.kmumq9l.mongodb.net/?retryWrites=true&w=majority&appName=WeatherDB
+
+  frontend:
+    image: chami99/spicy-frontend
+    container_name: frontend
+    ports:
+      - "3001:3000"
+
+volumes:
+  mongodb_data:
