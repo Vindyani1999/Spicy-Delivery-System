@@ -2,7 +2,7 @@
 FROM node:14
 
 # Set the working directory inside the container
-WORKDIR /
+WORKDIR /backend
 
 # Copy package.json and package-lock.json to the working directory
 COPY package*.json ./
@@ -20,4 +20,4 @@ RUN echo "MONGO_URI=mongodb+srv://Weather99:chami1999928@weatherdb.kmumq9l.mongo
 EXPOSE 5000
 
 # Command to run your backend application
-CMD ["node", "server.js"]
+CMD [ "npm run dev"]
