@@ -1,5 +1,5 @@
 # Use an official Node.js runtime as the base image
-FROM node:18
+FROM node:14
 
 # Set the working directory inside the container
 WORKDIR /backend
@@ -20,4 +20,4 @@ RUN echo "MONGO_URI=mongodb+srv://Weather99:chami1999928@weatherdb.kmumq9l.mongo
 EXPOSE 5000
 
 # Command to run your backend application
-CMD [ "npm run dev"]
+CMD [ "npm start"]
