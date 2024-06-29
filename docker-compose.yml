@@ -4,16 +4,16 @@ services:
   mongo:
     image: mongo
     ports:
-      - "27018:27017"
+      - "27019:27017"
     volumes:
       - mongodb_data:/data/db
 
   backend:
     image: chami99/spicy-backend
     build:
-      context: ./backend # Ensure this points to the correct backend directory
+      context: ./backend
     ports:
-      - "5001:5000"
+      - "5002:5000"
     environment:
       - MONGO_URI=mongodb+srv://Weather99:chami1999928@weatherdb.kmumq9l.mongodb.net/?retryWrites=true&w=majority&appName=WeatherDB
     depends_on:
@@ -22,9 +22,9 @@ services:
   frontend:
     image: chami99/spicy-frontend
     build:
-      context: ./frontend # Ensure this points to the correct frontend directory
+      context: ./frontend
     ports:
-      - "3001:3000"
+      - "3002:3000"
     depends_on:
       - backend
 
