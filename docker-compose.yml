@@ -13,7 +13,7 @@ services:
     build:
       context: ./backend # Ensure this points to the correct backend directory
     ports:
-      - "5001:5000"
+      - "5000:5000"
     environment:
       - MONGO_URI=mongodb+srv://Weather99:chami1999928@weatherdb.kmumq9l.mongodb.net/?retryWrites=true&w=majority&appName=WeatherDB
     depends_on:
@@ -24,7 +24,7 @@ services:
     build:
       context: ./frontend # Ensure this points to the correct frontend directory
     ports:
-      - "3002:3000"
+      - "3000:3000"
     depends_on:
       - backend
 
