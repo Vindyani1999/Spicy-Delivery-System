@@ -17,7 +17,7 @@ export default function Header() {
         </Link>
         <div className={classes.headerButtons}>
           <div className={classes.lnk}>
-            <Link to="/service">Welcome</Link>
+            <Link to="/service">Welcome All</Link>
           </div>
           <div className={classes.lnk}>
             <Link to="/about">About Us</Link>
