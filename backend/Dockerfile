@@ -20,4 +20,4 @@ RUN echo "MONGO_URI=mongodb+srv://Weather99:chami1999928@weatherdb.kmumq9l.mongo
 EXPOSE 5000
 
 # Command to run your backend application
-CMD [ "npm start"]
+CMD [ "npm", "start"]
