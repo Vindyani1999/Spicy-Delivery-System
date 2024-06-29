@@ -1,11 +1,11 @@
 # Use an official Node.js runtime as the base image
-FROM node:14
+FROM node:18.18.1
 
 # Set the working directory inside the container
 WORKDIR /frontend
 
 # Copy package.json and package-lock.json to the working directory
-COPY package.json package-lock.json ./
+COPY package.json .
 
 # Install dependencies
 RUN npm install
@@ -13,14 +13,8 @@ RUN npm install
 # Copy the rest of the application code to the working directory
 COPY . .
 
-# Build the React app for production
-RUN npm run build
-
-# Install a lightweight web server
-RUN npm install -g serve
-
 # Expose the port the app runs on
 EXPOSE 3000
 
 # Command to run the app
-CMD ["serve", "-s", "build", "-l", "3000"]
+CMD ["npm", "start"]

@@ -1,11 +1,11 @@
 # Use an official Node.js runtime as the base image
-FROM node:14
+FROM node:18.18.1
 
 # Set the working directory inside the container
 WORKDIR /backend
 
 # Copy package.json and package-lock.json to the working directory
-COPY package*.json ./
+COPY package.json .
 
 # Install npm dependencies
 RUN npm install
@@ -20,4 +20,4 @@ RUN echo "MONGO_URI=mongodb+srv://Weather99:chami1999928@weatherdb.kmumq9l.mongo
 EXPOSE 5000
 
 # Command to run your backend application
-CMD [ "npm start"]
+CMD [ "npm" ,"start"]
