@@ -24,7 +24,7 @@ services:
     build:
       context: ./frontend # Ensure this points to the correct frontend directory
     ports:
-      - "3001:3000"
+      - "3002:3000"
     depends_on:
       - backend
 
