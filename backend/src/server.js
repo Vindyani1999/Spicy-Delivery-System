@@ -11,14 +11,16 @@ import { dbconnect } from "./config/database.config.js";
 dbconnect();
 
 const app = express();
+
 app.use(express.json());
+
 app.use(
   cors({
     credentials: true,
     origin: ["http://localhost:3000"],
   })
 );
-
+app.get("/", (req,res)=>{res.send("Server is running");});
 app.use("/api/spices", spicesRouter);
 app.use("/api/users", userRouter);
 app.use("/api/orders", orderRouter);
